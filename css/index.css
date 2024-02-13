@@ -70,9 +70,14 @@ menu {
   margin: 0 auto;
 }
 
+.header__wrap {
+  width: 100%;
+}
+
 .header__top {
+  flex-direction: column;
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
 .top__wrap {
@@ -81,16 +86,26 @@ menu {
   align-items: flex-start;
 }
 
-.nav__svg {
-  fill: #FFFFFF;
-}
-
 .top__nav {
+  margin-bottom: 45px;
   display: flex;
   align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nav__wrap {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+.nav__svg {
+  fill: #ffffff;
 }
 
 .top__title {
+  margin-bottom: 8px;
   width: 314px;
   color: #fff;
   font-family: Roboto;
@@ -113,6 +128,44 @@ menu {
   height: 59px;
   text-align: center;
   border: none;
+}
+
+.top__wrapper {
+  margin-top: 54px;
+}
+
+.wrapper__list {
+  width: 314px;
+  height: 472px;
+  border: 1px solid #000;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  padding-left: 32px;
+  padding-top: 35px;
+}
+
+.item__svg {
+  fill: #dd2242;
+}
+
+.item__title {
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 26.409px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.item__subtitle {
+  color: #939393;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
 }
 
 @media screen and (min-width: 480px) {
