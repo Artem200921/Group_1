@@ -1,0 +1,128 @@
+.nature {
+  margin: 0 auto;
+  width: 100vw;
+
+  .nature-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 56px;
+  }
+
+  .nature-list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nature-img {
+    border-radius: 5%;
+    width: 314px;
+    height: 232px;
+  }
+  .backgound-mountains {
+    background-image:
+      url(../src/images/background_mountains.png), linear-gradient(
+        180deg,
+        #010a20 0%,
+        rgba(1, 10, 32, 0) 100%
+      );
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: contain;
+  }
+
+  .backgound-beach {
+    background-image: linear-gradient(
+        180deg,
+        #010a20 0%,
+        rgba(1, 10, 32, 0) 100%
+      ),
+      url(../src/images/background_beach.png);
+
+    // background: linear-gradient(180deg, #010A20 0%, rgba(1, 10, 32, 0.00) 100%);
+  }
+
+  .nature-title {
+    color: #fff;
+
+    font-family: 'DM Sans';
+    font-size: 40px;
+
+    font-weight: 700;
+    line-height: 46px; /* 115% */
+    margin-top: 33px;
+    margin-bottom: 1px;
+  }
+
+  .nature-text {
+    color: var(--Text-Lighten, #e0e0e0);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    font-family: 'DM Sans';
+    font-size: 16px;
+
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.5px;
+    margin-bottom: 40px;
+  }
+
+  .nature-botton {
+    // display: flex;
+
+    padding: 16px 24px;
+    // justify-content: center;
+    // align-items: center;
+    // gap: 24px;
+    border-radius: 32px;
+    color: white;
+    background: #dd2242;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-right: 108px;
+    padding-left: 108px;
+  }
+  @media screen and (min-width: 480px) {
+    & {
+      width: 480px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    & {
+      width: 768px;
+    }
+    .nature-list {
+      row-gap: 192px;
+    }
+    .nature-list-item {
+      display: flex;
+      column-gap: 125px;
+    }
+    .nature-botton {
+      padding-right: 40px;
+      padding-left: 40px;
+      height: auto;
+    }
+    .nature-img {
+      max-width: 630px;
+      height: auto;
+    }
+    .nature-list-item:nth-child(2) {
+      flex-direction: row-reverse;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & {
+      width: 1200px;
+    }
+    .nature-img {
+      // width: 314px;
+      // height: 200px;
+    }
+    .nature-title {
+      margin-top: 68px;
+    }
+  }
+}
