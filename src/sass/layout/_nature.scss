@@ -22,12 +22,12 @@
     height: 232px;
   }
   .backgound-mountains {
-    background-image:
-      url(../src/images/background_mountains.png), linear-gradient(
-        180deg,
-        #010a20 0%,
-        rgba(1, 10, 32, 0) 100%
-      );
+    background-image:linear-gradient(
+      180deg,
+      #010a20 0%,
+      rgba(1, 10, 32, 0) 100%
+    ),
+      url(../images/background_mountains.png) ;
  background-repeat: no-repeat;
  background-position: center;
  background-size: contain;
@@ -39,7 +39,7 @@
         #010a20 0%,
         rgba(1, 10, 32, 0) 100%
       ),
-      url(../src/images/background_beach.png);
+      url(../images/background_beach.png);
 
     // background: linear-gradient(180deg, #010A20 0%, rgba(1, 10, 32, 0.00) 100%);
   }
