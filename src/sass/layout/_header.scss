@@ -1,15 +1,9 @@
 .header {
-  padding-top: 48px;
-  background-image: url(../src/images/mobile/hero.jpeg);
   background-repeat: no-repeat;
   background-position: center center;
   width: 100%;
   height: 1104px;
   margin: 0 auto;
-}
-
-.header__wrap {
-  width: 100%;
 }
 
 .header__top {
@@ -105,8 +99,46 @@
   letter-spacing: 0.5px;
 }
 
+.slider-container {
+    padding-top: 32px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    height: 1080px;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slide {
+    height: 100%;
+  }
+  .top__wraps {
+    z-index: 5;
+    position: absolute;
+  }
+
 @media screen and (min-width: 480px) {
   .header {
     width: 375px;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    width: 708px;
+    height: 1080px;
+  }
+  
 }
