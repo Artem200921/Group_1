@@ -1,0 +1,19 @@
+.pos-a {
+  position: absolute;
+  bottom: 660px;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: 480px) {
+  }
+  @media (min-width: 768px) {
+    & {
+      right: 99px;
+    }
+  }
+  @media (min-width: 1200px) {
+    & {
+      bottom: 84px;
+    }
+  }
+}
