@@ -1,0 +1,102 @@
+.explore {
+  background-image: url(../images/field.png);
+  height: 929px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.explore-title {
+  color: var(--Blue---Background, #010a20);
+  text-align: center;
+
+  font-family: 'DM Sans';
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46px; /* 115% */
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+.carousel > ul {
+  display: flex;
+}
+.slider-list {
+  display: flex;
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: #dd2242;
+  width: 50px;
+  height: 19px;
+  border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.carousel-indicators {
+  bottom: 100px;
+}
+.mobile-prev-icon{
+  position: absolute;
+  right: 61px;
+  bottom: 290px;
+}
+.mobile-next-icon{
+  position: absolute;
+  left: 61px;
+  bottom: 290px;
+}
+.desktop-prev-icon{
+  display: none;
+    position: absolute;
+    right: 116px;
+    bottom: 800px;
+}
+.desktop-next-icon {
+  display: none;
+  position: absolute;
+left: 116px;
+bottom: 800px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  fill: #010a20;
+}
+.desktop-slider {
+  display: none;
+}
+
+@media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 768px) {
+  .explore-title{
+    padding-top: 127px;
+    padding-bottom: 45px;
+  }
+  .mobile-slider {
+    display: none;
+  }
+  .desktop-slider{
+    display: flex;
+  }
+  .carousel-indicators {
+    bottom: 512px;
+  }
+  .desktop-prev-icon{
+    display: block;
+      position: absolute;
+      right: 116px;
+      bottom: 630px;
+  }
+  .desktop-next-icon {
+    display: block;
+    position: absolute;
+  left: 116px;
+  bottom: 630px;
+  }
+}
+@media screen and (min-width: 1200px) {
+}
