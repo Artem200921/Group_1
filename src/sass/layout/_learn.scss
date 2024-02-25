@@ -1,0 +1,63 @@
+.learn {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.learn-title {
+  padding-top: 150px;
+  font-size: 50px;
+  font-style: bold;
+  margin-bottom: 40px;
+  font-family: 'Mobile H1';
+}
+
+.learn-subtitle {
+  font-family: 'Paragraph Light';
+  font-size: 18px;
+}
+
+.learn-button {
+  margin-top: 45px;
+  background-color: #dd2242;
+  border: none;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-family: 'CTA';
+  font-size: 18px;
+  border-radius: 100px;
+  color: #ffffff;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-bottom: 105px;
+}
+
+@media screen and (min-width: 768px) {
+  .learn {
+    display: inherit;
+  }
+
+  .learn-button {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .learn-title {
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+
+  .learn-subtitle {
+    margin-right: 370px;
+    margin-left: 370px;
+  }
+
+  .learn-button {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}

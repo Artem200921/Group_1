@@ -405,18 +405,17 @@ menu {
   background-image: url("../images/rectangle.png");
   background-size: cover;
   background-position: center;
-  height: 800px;
+  height: 930px;
   display: flex;
   text-align: center;
   color: white;
 }
 
 .numbers-title {
-  padding-top: 200px;
+  padding-top: 50px;
   font-family: "DM Sans";
   font-size: 50px;
-  line-height: 1;
-  margin-bottom: 1rem;
+  margin-bottom: 45px;
 }
 
 .numbers-subtitle {
@@ -432,17 +431,129 @@ menu {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
-.list-item {
-  margin-right: 25px;
+.list-item:not(:last-child) {
+  margin-bottom: 70px;
 }
 
 .item-title {
   color: #dd2242;
-  margin-bottom: 40px;
+  font-size: 45px;
+  font-family: "mobile H1";
+  margin-bottom: 15px;
 }
 
+@media screen and (min-width: 768px) {
+  .numbers-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .list-item:first-child {
+    margin-right: 70px;
+  }
+  .numbers-title {
+    padding-top: 200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .numbers {
+    background-image: url("../images/rectangle.png");
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    display: flex;
+    text-align: center;
+    color: white;
+  }
+  .numbers-title {
+    padding-top: 200px;
+    font-family: "DM Sans";
+    font-size: 50px;
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+  .numbers-subtitle {
+    margin-bottom: 50px;
+  }
+  .numbers p {
+    font-size: 18px;
+    font-style: "Paragraph Light";
+  }
+  .numbers-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .list-item {
+    margin-right: 25px;
+    margin-bottom: 70px;
+  }
+  .item-title {
+    color: #dd2242;
+    margin-bottom: 40px;
+  }
+}
+.learn {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.learn-title {
+  padding-top: 150px;
+  font-size: 50px;
+  font-style: bold;
+  margin-bottom: 40px;
+  font-family: "Mobile H1";
+}
+
+.learn-subtitle {
+  font-family: "Paragraph Light";
+  font-size: 18px;
+}
+
+.learn-button {
+  margin-top: 45px;
+  background-color: #dd2242;
+  border: none;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-family: "CTA";
+  font-size: 18px;
+  border-radius: 100px;
+  color: #ffffff;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-bottom: 105px;
+}
+
+@media screen and (min-width: 768px) {
+  .learn {
+    display: inherit;
+  }
+  .learn-button {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .learn-title {
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+  .learn-subtitle {
+    margin-right: 370px;
+    margin-left: 370px;
+  }
+  .learn-button {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
 .section__photo-gallery {
   margin-top: 32px;
   width: 100%;
