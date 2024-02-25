@@ -1,2 +1,0 @@
-function vid(n){$("video").each((function(i){var t=$(this).get(0);n==i?t.play():(t.pause(),$(".play-button").each((function(i){i!==n&&$(this).css({display:"inline"})})))}))}function showbtn(n){$(".play-button").each((function(i){i==n&&$(this).css({display:"inline"})})),$("video").each((function(i){var t=$(this).get(0);n==i&&t.pause()}))}$(".play-button").each((function(n){$(this).on("click",(function(){$(this).css({display:"none"}),vid(n)}))})),$("video").each((function(n){$(this).on("click",(function(){showbtn(n)}))}));
-//# sourceMappingURL=index.93f41ec0.js.map
